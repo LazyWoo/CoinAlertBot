@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5291fd1c-9118-4cf4-a190-53d6e23f099e" name="Changes" comment="Add initial project files and bot setup&#10;&#10;This commit initializes the CoinAlertBot project with all necessary configuration files, the main bot startup script, and version control setup. Sensitive data is stored in the .env file, which is appropriately excluded using .gitignore.">
-      <change afterPath="$PROJECT_DIR$/bot/handlers/top_coins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="5291fd1c-9118-4cf4-a190-53d6e23f099e" name="Changes" comment="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/crypto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/handlers/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +23,14 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="lazywoo" />
         <option value="lazywoo &lt;zhaxer1407@gmail.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MaliciousPackageCheckinHandlerState">
+    <option name="packageCheck" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -118,8 +113,43 @@
       <option name="project" value="LOCAL" />
       <updated>1739795195519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications.">
+      <option name="closed" value="true" />
+      <created>1739821287340</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739821287340</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications.">
+      <option name="closed" value="true" />
+      <created>1739821689503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739821689503</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications.">
+      <option name="closed" value="true" />
+      <created>1739821871933</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739821871933</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications.">
+      <option name="closed" value="true" />
+      <created>1739821881841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739821881841</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -133,7 +163,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Add functionality for retrieving and displaying top crypto coins&#10;&#10;Implemented integration with CoinGecko API to fetch top 100 crypto coins and display their prices. Added a new `/top_coins` command to the bot, along with required handlers, logging improvements, and configuration updates." />
     <MESSAGE value="Add initial project files and bot setup&#10;&#10;This commit initializes the CoinAlertBot project with all necessary configuration files, the main bot startup script, and version control setup. Sensitive data is stored in the .env file, which is appropriately excluded using .gitignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial project files and bot setup&#10;&#10;This commit initializes the CoinAlertBot project with all necessary configuration files, the main bot startup script, and version control setup. Sensitive data is stored in the .env file, which is appropriately excluded using .gitignore." />
+    <MESSAGE value="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CoinGecko integration and top coins command&#10;&#10;This commit introduces a CoinGecko API integration to fetch the top 100 cryptocurrencies by market cap. Additionally, a `/top_coins` command is added to the bot, displaying the latest prices in USD. Updates include logging improvements, refined bot functionality, and handler modifications." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

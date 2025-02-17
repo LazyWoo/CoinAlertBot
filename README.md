@@ -1,1 +1,1 @@
-# CoinAlert Crypto Bot
+# CoinAlert bot

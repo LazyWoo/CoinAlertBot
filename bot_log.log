@@ -1,0 +1,34 @@
+2025-02-17 14:39:40,313 - root - INFO - Router [Router '0x757926a03890'] successfully connected.
+2025-02-17 14:39:40,313 - bot.bot - INFO - Bot is starting...
+2025-02-17 14:39:40,313 - aiogram.dispatcher - INFO - Start polling
+2025-02-17 14:39:41,140 - aiogram.dispatcher - INFO - Run polling for bot @cointalert_crypto_bot id=7730554226 - 'CoinAlert'
+2025-02-17 14:43:08,455 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-02-17 14:43:08,456 - aiogram.dispatcher - INFO - Polling stopped for bot @cointalert_crypto_bot id=7730554226 - 'CoinAlert'
+2025-02-17 14:43:08,456 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-17 14:43:09,424 - bot.bot - INFO - Bot stopped.
+2025-02-17 14:43:09,486 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x757926a60a10>, 6004.570151143)])']
+connector: <aiohttp.connector.TCPConnector object at 0x757929a3a4e0>
+2025-02-17 14:43:24,543 - root - INFO - Router [Router] successfully connected.
+2025-02-17 14:43:24,543 - bot.bot - INFO - Bot is starting...
+2025-02-17 14:43:24,543 - aiogram.dispatcher - INFO - Start polling
+2025-02-17 14:43:25,196 - aiogram.dispatcher - INFO - Run polling for bot @cointalert_crypto_bot id=7730554226 - 'CoinAlert'
+2025-02-17 14:44:39,473 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-02-17 14:44:39,474 - aiogram.dispatcher - INFO - Polling stopped for bot @cointalert_crypto_bot id=7730554226 - 'CoinAlert'
+2025-02-17 14:44:39,474 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-17 14:44:40,781 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x703221053ef0>
+2025-02-17 14:44:40,782 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x703220c607d0>, 6095.804542324)])']
+connector: <aiohttp.connector.TCPConnector object at 0x703220bdf2f0>
+2025-02-17 14:45:00,810 - root - INFO - Router [0x7df4e04037d0] successfully connected.
+2025-02-17 14:45:00,810 - bot.bot - INFO - Bot is starting...
+2025-02-17 14:45:00,810 - aiogram.dispatcher - INFO - Start polling
+2025-02-17 14:45:01,452 - aiogram.dispatcher - INFO - Run polling for bot @cointalert_crypto_bot id=7730554226 - 'CoinAlert'
+2025-02-17 14:53:27,352 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-02-17 14:53:27,353 - aiogram.dispatcher - INFO - Polling stopped for bot @cointalert_crypto_bot id=7730554226 - 'CoinAlert'
+2025-02-17 14:53:27,353 - aiogram.dispatcher - INFO - Polling stopped
+2025-02-17 14:53:32,874 - bot.bot - INFO - Bot stopped.
+2025-02-17 14:53:32,942 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7df4e04604d0>, 6628.020436762)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7df4e10953d0>
